@@ -1,0 +1,39 @@
+ public void PlayTrack1(File track) throws IOException, UnsupportedAudioFileException, LineUnavailableException {
+
+            try {
+//            track = "C:/Users/alash/Documents/NetBeansProjects/MPlayer/src/mplayer/tracks/Lower_Level.wav";
+            AudioInputStream stream = AudioSystem.getAudioInputStream(new File("C:/Users/alash/Documents/NetBeansProjects/MPlayer/src/mplayer/tracks/Lower_Level.wav").getAbsoluteFile());
+            Clip clip = AudioSystem.getClip();
+            clip.open(stream);
+        Uplay1.setOnAction(event ->{
+        clip.start();
+        });
+        pause1.setOnAction(event->{
+        clip.stop();
+        });
+    } 
+        catch(Exception ex) {
+        System.out.println("Error with playing sound.");
+        ex.printStackTrace();
+    }   
+        }
+//      PlayTrack1()
+//     Работа со 2 треком в окне:
+//     фУНКЦИЯ ДЛЯ ВОСПРОИЗВЕДЕНИЯ ТРЕКА
+
+        public void PlayTrack2(ActionEvent event) throws IOException, UnsupportedAudioFileException, LineUnavailableException  {
+            if (count2 ==1){ //Конструкция для того, чтобы не сливались поток одного и того же трека
+            count2++;
+                try {
+                AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("C:/Users/alash/Documents/NetBeansProjects/MPlayer/src/mplayer/tracks/Rasco_Situations.wav").getAbsoluteFile());
+                Clip clip = AudioSystem.getClip();
+                clip.open(audioInputStream);
+                clip.setFramePosition(0);
+                clip.start();
+                } 
+                    catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();}
+            }
+            clip.loop(Clip.LOOP_CONTINUOUSLY);
+        }

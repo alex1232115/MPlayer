@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="MainAnchor" prefHeight="520.0" prefWidth="911.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mplayer.controllers.TrackController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="868.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/alash/Documents/NetBeansProjects/MPlayer/src/mplayer/images/5f4ce4ac3ebcd0bb15614b0b6d40dad4.jpg" />
+         </image>
+         <effect>
+            <BoxBlur height="13.0" width="10.0" />
+         </effect>
+      </ImageView>
+      <AnchorPane id="AnchorPane" layoutX="-9.0" layoutY="-1.0" prefHeight="30.0" prefWidth="920.0" style="-fx-background-color: #717171;">
+         <children>
+            <Text layoutX="14.0" layoutY="20.0" stroke="#282727" strokeType="OUTSIDE" strokeWidth="0.0" text="MPLAYER">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="379.0" layoutY="21.0" stroke="#282727" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Library">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="775.0" layoutY="21.0" stroke="#282727" strokeType="OUTSIDE" strokeWidth="0.0" text="Friend List">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <Button fx:id="Info1" contentDisplay="CENTER" layoutX="586.0" layoutY="105.0" minWidth="42.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #717171;" text="Info">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#726f6f" layoutX="709.0" layoutY="125.0" stroke="#282727" strokeType="OUTSIDE" strokeWidth="0.0" text="3:30">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="116.0" layoutY="63.0" stroke="#282727" strokeType="OUTSIDE" strokeWidth="0.0" text="TItle" wrappingWidth="54.0">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="374.0" layoutY="62.0" stroke="#282727" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="Info2" contentDisplay="CENTER" layoutX="586.0" layoutY="165.0" minWidth="42.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #717171;" text="Info">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Info3" contentDisplay="CENTER" layoutX="586.0" layoutY="223.0" minWidth="42.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #717171;" text="Info">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Info4" contentDisplay="CENTER" layoutX="586.0" layoutY="283.0" minWidth="42.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #717171;" text="Info">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#726f6f" layoutX="709.0" layoutY="176.0" stroke="#282727" strokeType="OUTSIDE" strokeWidth="0.0" text="3:37">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#726f6f" layoutX="709.0" layoutY="242.0" stroke="#282727" strokeType="OUTSIDE" strokeWidth="0.0" text="3:44">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#726f6f" layoutX="709.0" layoutY="299.0" stroke="#282727" strokeType="OUTSIDE" strokeWidth="0.0" text="3:54">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="763.0" layoutY="28.0" opacity="0.08" prefHeight="491.0" prefWidth="148.0" style="-fx-background-color: grey;" />
+      <AnchorPane id="AnchorPane" fx:id="PlayerAnchor" layoutX="289.0" layoutY="465.0" prefHeight="36.0" prefWidth="223.0" style="-fx-background-color: #717171;" />
+   </children>
+</AnchorPane>
